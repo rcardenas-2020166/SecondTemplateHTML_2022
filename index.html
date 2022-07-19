@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Login | Agenda Web</title>
+
+    <!-- FONT AWESOME ICONS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- HOJA DE ESTILOS  -->
+   <link rel="stylesheet" href="css/loginCSS.css" type="text/css">
+
+</head>
+<body>
+
+	<!-- Contenedor Animacion de Carga -->
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+	<img class="wave" src="images/wave.png" alt="wave">
+	<div class="contenedor-principal">
+		<div class="img">
+			<img src="images/portada.png" alt="portada login">
+		</div>
+		<div class="contenedor-login">
+			<form>
+				<img src="images/user.png">
+				<h2 class="titulo-formulario">Iniciar Sesión</h2>
+           		<div class="encabezado one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Usuario</h5>
+           		   		<input type="text" class="input" required>
+           		   </div>
+           		</div>
+           		<div class="encabezado pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Contraseña</h5>
+           		    	<input type="password" class="input" required>
+            	   </div>
+            	</div>
+            	<a href="#">Registrarse</a><br>
+
+				<a  href="contactos.html" class="ov-btn-slide-close">
+					I N G R E S A R 
+				</a>
+				
+			</form>
+        </div>
+    </div>
+
+	<!--SECCIÓN DE SCRIPTS-->
+    
+    <!--Script de Animación del LOGIN-->
+    <script type="text/javascript" src="js/main.js"></script>
+	
+	<!--Script de Animación de Carga-->
+    <script>
+        window.onload = function()
+        {
+                var contenedor = document.getElementById('contenedor-carga');
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+        }
+    </script>
+</body>
+</html>

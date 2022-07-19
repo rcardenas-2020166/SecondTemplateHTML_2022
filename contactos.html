@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Contactos | Agenda Web</title>
+
+    <!--LINK DEL ARCHIVO CSS-->
+    <link rel="stylesheet" href="css/menuLateralCSS.css" type="text/css">
+    <link rel="stylesheet" href="css/contactosCSS.css" type="text/css">
+        
+    <!----LINK BOXICONS CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- FONTAWESOME CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+</head>
+<body>
+
+    <!-- Contenedor Animacion de Carga -->
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+    <!-- Barra de Tareas -->
+    <nav class="sidebar close">
+        <header>
+            <div class="imagen-texto">
+                <span class="imagen">
+                    <img src="images/MiFoto.jpg" alt="foto de perfil">
+                </span>
+
+                <div class="texto logo-texto">
+                    <span class="nombre">Rodrigo<br>Cárdenas</span>
+                    <span class="rol">Estudiante</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!--Elementos del NavBar-->
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Buscar...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="contactos.html">
+                            <i class='bx bx-id-card icon' ></i>
+                            <span class="texto nav-texto">Contactos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="nuevoContacto.html">
+                            <i class='bx bx-user-plus icon icon' ></i>
+                            <span class="texto">Nuevo Contacto</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="perfil.html">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="texto nav-texto">Perfil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="favoritos.html">
+                            <i class='bx bxs-star icon' ></i>
+                            <span class="texto">Favoritos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="toDoList.html">
+                            <i class='bx bxs-edit icon' ></i>
+                            <span class="texto">Lista de Tareas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon' ></i>
+                            <span class="texto nav-texto">Configuración</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <!--Simula Cerrar la Sesión-->
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="texto nav-texto">Salir</span>
+                    </a>
+                </li>
+
+                <!--TOOGLE para cambiar entre modo oscuro y modo claro-->
+                <li class="mode">
+                    <div class="claro-dark">
+                        <i class='bx bx-moon icon luna'></i>
+                        <i class='bx bx-sun icon sol'></i>
+                    </div>
+                    <span class="mode-texto texto">Tema Oscuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Sección disponible para el contenido de la página-->
+    <section class="inicio">
+        <div class="titulos-texto">
+            <i class="fas fa-id-card"></i>
+                Contactos
+        </div>
+        <div class="contenedor-contactos">
+            <input type="radio" name="dot" id="one">
+            <input type="radio" name="dot" id="two">
+            <div class="contenedor-cartas">
+                <!--Primera Página de Contactos-->
+                <div class="cartas">
+                    <div class="carta-individual">
+                        <div class="contenedor-informacion">
+                            <div class="imagen">
+                                <img src="images/contactos/jcastellanos.jpg" alt="">
+                            </div>
+                            <div class="detalles">
+                                <div class="nombre">Josué Castellanos</div>
+                                <div class="usuario">jcastellanos</div>
+                            </div>
+                            <div class="media-icons">
+                                <a  href="detalleContactoUno.html" class="ov-btn-slide-close">
+                                    Ver Detalles.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carta-individual">
+                        <div class="contenedor-informacion">
+                            <div class="imagen">
+                                <img src="images/contactos/aperez.jpg" alt="">
+                            </div>
+                            <div class="detalles">
+                                <div class="nombre">Álvaro Pérez</div>
+                                <div class="usuario">aperez</div>
+                            </div>
+                            <div class="media-icons">
+                                <a  href="detalleContactoDos.html" class="ov-btn-slide-close">
+                                    Ver Detalles.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carta-individual">
+                        <div class="contenedor-informacion">
+                            <div class="imagen">
+                                <img src="images/contactos/srodriguez.jpg" alt="">
+                            </div>
+                            <div class="detalles">
+                                <div class="nombre">Samuel Rodríguez</div>
+                                <div class="usuario">srodriguez</div>
+                            </div>
+                            <div class="media-icons">
+                                <a  href="detalleContactoTres.html" class="ov-btn-slide-close">
+                                    Ver Detalles.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--Segunda Página de Contactos-->
+                <div class="cartas">
+                    <div class="carta-individual">
+                        <div class="contenedor-informacion">
+                            <div class="imagen">
+                                <img src="images/contactos/mmonroy.jpg" alt="">
+                            </div>
+                            <div class="detalles">
+                                <div class="nombre">Marlon Monroy</div>
+                                <div class="usuario">mmonroy</div>
+                            </div>
+                            <div class="media-icons">
+                                <a  href="detalleContactoCuatro.html" class="ov-btn-slide-close">
+                                    Ver Detalles.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carta-individual">
+                        <div class="contenedor-informacion">
+                            <div class="imagen">
+                                <img src="images/contactos/jsalazar.jpg" alt="">
+                            </div>
+                            <div class="detalles">
+                                <div class="nombre">Julio Salazar</div>
+                                <div class="usuario">jsalazar</div>
+                            </div>
+                            <div class="media-icons">
+                                <a  href="detalleContactoCinco.html" class="ov-btn-slide-close">
+                                    Ver Detalles.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carta-individual">
+                        <div class="contenedor-informacion">
+                            <div class="imagen">
+                                <img src="images/contactos/fgomez.jpg" alt="">
+                            </div>
+                            <div class="detalles">
+                                <div class="nombre">Francisco Gómez</div>
+                                <div class="usuario">fgomez</div>
+                            </div>
+                            <div class="media-icons">
+                                <a  href="detalleContactoSeis.html" class="ov-btn-slide-close">
+                                    Ver Detalles.
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <!--Cambiar página de Contactos-->
+                <label for="one" class=" active one"></label>
+                <label for="two" class="two"></label>
+            </div>
+            <div class="button">
+                <a  href="nuevoContacto.html" class="ov-btn-slide-close">
+                    <i class="fas fa-user-plus icon"></i> N U E V O <br> C O N T A C T O
+                </a>
+            </div>
+          </div>
+    </section>
+
+
+    <!--SECCIÓN DE SCRIPTS-->
+
+    <!--Script de Animación del Menú -NavBar-->
+    <script src="js/script.js"></script>
+
+    <!--Script de Animación de Carga-->
+    <script>
+        window.onload = function()
+        {
+                var contenedor = document.getElementById('contenedor-carga');
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+        }
+    </script>
+    
+</body>
+</html>

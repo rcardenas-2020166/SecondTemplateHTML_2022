@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Lista de Tareas | Agenda Web</title> 
+    
+    <!--LINK DEL ARCHIVO CSS-->
+    <link rel="stylesheet" href="css/menuLateralCSS.css" type="text/css">
+    <link rel="stylesheet" href="css/toDoListCSS.css" type="text/css"/>
+    
+    <!--LINK BOXICONS CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    
+</head>
+<body>
+
+    <!-- Contenedor Animacion de Carga -->
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+    <!--Barra de Tareas-->
+    <nav class="sidebar close">
+        <header>
+            <div class="imagen-texto">
+                <span class="imagen">
+                    <img src="images/MiFoto.jpg" alt="foto de perfil">
+                </span>
+
+                <div class="texto logo-texto">
+                    <span class="nombre">Rodrigo<br>Cárdenas</span>
+                    <span class="rol">Estudiante</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!--Elementos del NavBar-->
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Buscar...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="contactos.html">
+                            <i class='bx bx-id-card icon'></i>
+                            <span class="texto nav-texto">Contactos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="nuevoContacto.html">
+                            <i class='bx bx-user-plus icon icon' ></i>
+                            <span class="texto">Nuevo Contacto</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="perfil.html">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="texto nav-texto">Perfil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="favoritos.html">
+                            <i class='bx bxs-star icon' ></i>
+                            <span class="texto nav-texto">Favoritos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                      <a href="toDoList.html">
+                          <i class='bx bxs-edit icon' ></i>
+                          <span class="texto">Lista de Tareas</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon' ></i>
+                            <span class="texto nav-texto">Configuración</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <!--Simula Cerrar la Sesión-->
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="texto nav-texto">Salir</span>
+                    </a>
+                </li>
+
+                <!--TOOGLE para cambiar entre modo oscuro y modo claro-->
+                <li class="mode">
+                    <div class="claro-dark">
+                        <i class='bx bx-moon icon luna'></i>
+                        <i class='bx bx-sun icon sol'></i>
+                    </div>
+                    <span class="mode-texto texto">Tema Oscuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <!--Sección disponible para el Contenido de la Página-->
+    <section class="inicio">
+      <div class="titulos-texto">
+        <i class="fas fa-edit"></i>
+            Lista de Tareas
+      </div>
+      <div class="todoList">
+          <div class="cover-img">
+            <div class="cover-inner">
+              <h3 id="dayName"> URGENTE</h3>
+            </div>
+          </div>
+      
+          <div class="content">
+            <form class="add">
+              <input type="text" name="add" placeholder="Agregar...">
+              <div class="input-buttons">
+                <a href="#0" class="add-todo">
+                  <i class="fas fa-plus add plus-icon"></i>
+                </a>
+              </div>
+            </form>
+            <ul class="todos align">
+              <li>
+                <input type="checkbox" id="todo_1">
+                <label for="todo_1">
+                  <span class="check"></span>
+                  <p>Tareas del Colegio</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+              <li>
+                <input type="checkbox" id="todo_2">
+                <label for="todo_2">
+                  <span class="check"></span>
+                  <p>Alimentar a mi Mascota</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+              <li>
+                <input type="checkbox" id="todo_3">
+                <label for="todo_3">
+                  <span class="check"></span>
+                  <p>Arreglar mi Cuarto</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+              <li>
+                <input type="checkbox" id="todo_4">
+                <label for="todo_4">
+                  <span class="check"></span>
+                  <p>Tomar un Baño</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+            </ul>
+          </div>
+        </div>
+
+        <div class="todoList2">
+          <div class="cover-img">
+            <div class="cover-inner">
+              <h3 id="dayName">NO URGENTE</h3>
+            </div>
+          </div>
+      
+          <div class="content">
+            <form class="add2">
+              <input type="text" name="add" placeholder="Agregar...">
+              <div class="input-buttons">
+                <a href="#0" class="add-todo2">
+                  <i class="fas fa-plus add plus-icon"></i>
+                </a>
+              </div>
+            </form>
+            <ul class="todos2 align">
+              <li>
+                <input type="checkbox" id="todo_1-1">
+                <label for="todo_1-1">
+                  <span class="check"></span>
+                  <p>Hacer Tarea</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+              <li>
+                <input type="checkbox" id="todo_2-2">
+                <label for="todo_2-2">
+                  <span class="check"></span>
+                  <p>Recoger Basura</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+              <li>
+                <input type="checkbox" id="todo_3-3">
+                <label for="todo_3-3">
+                  <span class="check"></span>
+                  <p>Jugar Videojueos</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+              <li>
+                <input type="checkbox" id="todo_4-4">
+                <label for="todo_4-4">
+                  <span class="check"></span>
+                  <p>Ver Netflix</p>
+                </label>
+                <i class="fas fa-trash-alt delete"></i>
+              </li>
+      
+            </ul>
+          </div>
+        </div>
+        
+        
+  </section>
+
+    <!--SECCIÓN DE SCRIPTS-->
+          
+    <!--Script de Animación del Menú -NavBar-->
+    <script src="js/script.js"></script>
+
+    <!--Script Manejo de Las Listas de Tareas-->
+    <script src="js/toDoList.js"></script>
+
+    <!--Script de Animación de Carga-->
+    <script>
+      window.onload = function()
+      {
+              var contenedor = document.getElementById('contenedor-carga');
+              contenedor.style.visibility = 'hidden';
+              contenedor.style.opacity = '0';
+      }
+    </script>
+
+
+</body>
+</html>

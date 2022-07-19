@@ -1,0 +1,208 @@
+
+*{
+    font-family: 'Century Gothic';
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.contenedor
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    height: auto;
+    padding: 0 20px;
+}
+
+.contenedor-perfil
+{
+    display: flex;
+    width: 800px;
+    height: auto;
+    background-color: #D7DBDD;
+    border-radius: 2px;
+}
+
+.encabezado
+{
+    border-radius: 1px solid #DDDDDD;
+    
+}
+
+.descripcion
+{
+    background-color: #FBFBFB;
+}
+
+.encabezado, .descripcion
+{
+    padding: 20px;
+    text-align: center;
+}
+
+.encabezado a
+{
+    position: relative;
+    display: block;
+}
+
+.encabezado img
+{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.encabezado a:hover img
+{
+    box-shadow: 0 0 0 12px rgba(35, 55, 109, .3);
+}
+
+.encabezado h2
+{
+    color: #F0522A;
+}
+
+.encabezado h4
+{
+    margin-bottom: 20px;
+}
+
+.descripcion
+{
+    position: relative;
+}
+
+.descripcion .count-container 
+{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 7 42rem;
+    flex: 1 1 42rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+.descripcion .count-container .box 
+{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 15rem;
+    flex: 1 1 15rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: .5rem;
+    background: #EAEDED;
+}
+
+.descripcion .count-container .box h3 
+{
+    font-size: 1rem;
+    color: #23376D;
+}
+  
+.descripcion .count-container .box p 
+{
+    font-size: 1rem;
+    color: #23376D;
+}
+
+.titulos-texto
+{
+    background-color: #D7DBDD;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin: 2rem;
+    font-weight: bold;
+    color:#23376D;
+    font-size: 1.9rem;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*Carga de la Página*/
+*:after, *:before
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenedor-carga
+{
+    background-color: #23376D;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga
+{
+    border: 15px solid #ccc;
+    border-top-color: #E67E22;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar 
+{
+  from
+  {
+      transform: rotate(0deg);
+  }
+  to
+  {
+      transform: rotate(360deg);
+  }
+}
+
+/*RESPONSIVE*/
+@media(max-width:640px)
+{
+    .contenedor-perfil
+    {
+        display: block;
+        width: 500px;
+    }
+    .encabezado
+    {
+        padding: 20px 20px 5px 20px;
+        border: none;
+    }
+    .descripcion
+    {
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+        width: 450px;
+    }
+    .h4
+    {
+        margin: 0;
+    }
+}

@@ -1,0 +1,208 @@
+
+* 
+{
+    font-family: 'Century Gothic';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    text-align: center;
+    padding: 10px;
+    color: rgb(97, 96, 96);
+}
+
+.descripcion
+{
+    text-align: center;
+    padding: 5px 25px;
+    color: rgb(53, 53, 53);
+}
+
+.card
+{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card__perfil
+{
+    width: 310px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;
+    background-color: #DDDDDD;
+}
+
+.card__perfil:hover
+{
+    border: solid #23376D 2px;
+}
+
+.card__perfil:hover img
+{
+    transform: rotate(0);
+}
+
+.imagen-favorito
+{
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(216, 216, 216);
+    transform: rotate(-30deg);
+    transition: all .3s;
+    border: solid #23376D 2px;
+}
+
+.card__nombre
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card__button
+{
+    text-align: center;
+}
+
+.titulos-texto
+{
+    background-color: #D7DBDD;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    margin: 2rem;
+    font-weight: bold;
+    color:#23376D;
+    font-size: 1.9rem;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*BOTÓN ANIMADO*/
+.ov-btn-slide-close 
+{
+    background: orange; /* color de fondo */
+    color: black; /* color de fuente */
+    padding: 18px 24px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    border-color: transparent;
+    border: none
+}
+
+.ov-btn-slide-close:before, .ov-btn-slide-close:after 
+{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -50%;
+    background-color: #23376D; /* color de fondo hover */
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.ov-btn-slide-close:after 
+{
+    left: 100%;
+}
+
+.ov-btn-slide-close:hover 
+{
+    color: orange; /* color de fuente hover */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ov-btn-slide-close:hover:before 
+{
+    left: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ov-btn-slide-close:hover:after
+{
+    left: 50%;
+    cursor: pointer;
+}
+
+/*Carga de la Página*/
+
+*:after, *:before
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contenedor-carga
+{
+    background-color: #23376D;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga
+{
+    border: 15px solid #ccc;
+    border-top-color: #E67E22;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar 
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+::selection
+{
+    color: #FFFFFF;
+    background: #23376D;
+}

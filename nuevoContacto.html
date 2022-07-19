@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Nuevo Contacto | Agenda Web</title> 
+    
+    <!--LINK DEL ARCHIVO CSS-->
+    <link rel="stylesheet" href="css/menuLateralCSS.css" type="text/css">
+    <link rel="stylesheet" href="css/nuevoContacto.CSS" type="text/css">
+    
+    <!-- LINK BOXICONS CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+     <!-- FONT AWESOME ICONS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Contenedor Animacion de Carga -->
+    <div id="contenedor-carga">
+        <div id="carga"></div>
+    </div>
+
+    <!--Barra de Tareas-->
+    <nav class="sidebar close">
+        <header>
+            <div class="imagen-texto">
+                <span class="imagen">
+                    <img src="images/MiFoto.jpg" alt="foto de perfil">
+                </span>
+
+                <div class="texto logo-texto">
+                    <span class="nombre">Rodrigo<br>Cárdenas</span>
+                    <span class="rol">Estudiante</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!--Elementos del NavBar-->
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Buscar...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="contactos.html">
+                            <i class='bx bx-id-card icon'></i>
+                            <span class="texto nav-texto">Contactos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="nuevoContacto.html">
+                            <i class='bx bx-user-plus icon icon' ></i>
+                            <span class="texto">Nuevo Contacto</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="perfil.html">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="texto nav-texto">Perfil</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="favoritos.html">
+                            <i class='bx bxs-star icon' ></i>
+                            <span class="texto nav-texto">Favoritos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="toDoList.html">
+                            <i class='bx bxs-edit icon' ></i>
+                            <span class="texto">Lista de Tareas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-cog icon' ></i>
+                            <span class="texto nav-texto">Configuración</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <!--Simula Cerrar la Sesión-->
+                <li class="">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="texto nav-texto">Salir</span>
+                    </a>
+                </li>
+
+                <!--TOOGLE para cambiar entre modo oscuro y modo claro-->
+                <li class="mode">
+                    <div class="claro-dark">
+                        <i class='bx bx-moon icon luna'></i>
+                        <i class='bx bx-sun icon sol'></i>
+                    </div>
+                    <span class="mode-texto texto">Tema Oscuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <!--Sección disponible para el contenido de la Página-->
+    <section class="inicio">
+        <div class="titulos-texto">
+            <i class="fas fa-user-plus"></i>
+            Nuevo Contacto
+        </div>
+        <div class="contenedor-principal">
+            <div class="titulo">Agregar Contacto</div>
+                <div class="content">
+                <form action="#">
+                    <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombres :</span>
+                        <input type="text" placeholder="Ingrese los Nombres" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Apellidos :</span>
+                        <input type="text" placeholder="Ingrese los Apellidos" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Fecha de Nacimiento :</span>
+                        <input type="date" id="calendario" name="trip-start">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Correo :</span>
+                        <input type="text" placeholder="Ingrese el Correo" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">N°. Telefónico</span>
+                        <input type="text" placeholder="Ingrese el número" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Usuario :</span>
+                        <input type="text" placeholder="Ingrese el Usuario" required>
+                    </div>
+                    
+                    </div>
+                    <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Rol :</span>
+                    <div class="category">
+                        <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Maestro</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Estudiante</span>
+                    </label>
+                    </div>
+                    </div><br>
+                    <div class="button">
+                        <a  href="nuevoContacto.html" class="ov-btn-slide-close">
+                            A G R E G A R
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCIÓN DE SCRIPTS-->
+    
+    <!--Script de Animación del Menú -NavBar-->
+    <script src="js/script.js"></script>
+
+    <!--Script de Animación de Carga-->
+    <script>
+        window.onload = function()
+        {
+                var contenedor = document.getElementById('contenedor-carga');
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+        }
+    </script>
+</body>
+</html>
